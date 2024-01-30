@@ -71,10 +71,10 @@ const DisplacementSphere = (props) => {
         material.current = new MeshPhongMaterial();
         material.current.onBeforeCompile = (shader) => {
             uniforms.current = UniformsUtils.merge([
-                UniformsLib["ambient"],
-                UniformsLib["lights"],
-                shader.uniforms,
-                { time: { type: "f", value: 0 } },
+              UniformsLib["ambient"],
+              UniformsLib["lights"],
+              shader.uniforms,
+              { time: { type: "f", value: 0 } },
             ]);
 
             shader.uniforms = uniforms.current;

@@ -26,14 +26,14 @@ export const Home = () => {
         <DisplacementSphere />
         <LogoLink />
         <Content />
-        <ThemeToggle />
+        {/* <ThemeToggle /> */}
         <Hidden smDown>
           <SocialIcons />
         </Hidden>
         <Hidden mdUp>
           <SpeedDials />
         </Hidden>
-        <FooterText />
+        {/* <FooterText /> */}
       </div>
     </>
   );
